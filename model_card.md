@@ -1,7 +1,5 @@
 # Model Card
 
-See the [example Google model cards](https://modelcards.withgoogle.com/model-reports) for inspiration. 
-
 ## Model Description
 
 **Input:** 
@@ -15,13 +13,13 @@ Brain state prediction, which can be one of four classes: 1 - "Wake", 2 - "Quiet
 
 ## Performance
 
-The overall accuracy of the model, assessed in a test set containing data not seen during training and validation, is close to 95%. The figure shows the breakdown of accuracy accross classes.
+The overall accuracy of the model, assessed in a test set containing data not seen during training and validation, is close to 90%. The figure shows the breakdown of accuracy accross classes, in comparison with a Random Forest classifier.
 
-![Screenshot](Model_CNN_accuracy.png)
+![Screenshot](Model_selection.png)
 
 ## Limitations
 
-It is still unclear how the model generalizes on data collecet from rodents not used in the model training. It is possible that in those cases accuracy might be lower that what is reported here.
+It is still unclear how the model generalizes on data collected from rodents not used in the model training. It is possible that in those cases accuracy might be lower that what is reported here.
 The imputs provided should be as close as possible to the ones used in model training. Namely, electrical activity just be recorded from the hippocampus and the movement signal should be recorded with an accelerometer located in the head of the animal. Deviations from this might negatively impact predictions.
 
 ## Trade-offs
